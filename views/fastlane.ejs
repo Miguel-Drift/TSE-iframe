@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+
+  <script>
+    "use strict";
+
+    !(function () {
+      var t = (window.driftt = window.drift = window.driftt || []);
+      if (!t.init) {
+        if (t.invoked)
+          return void (
+            window.console &&
+            console.error &&
+            console.error("Drift snippet included twice.")
+          );
+        (t.invoked = !0),
+          (t.methods = [
+            "identify",
+            "config",
+            "track",
+            "reset",
+            "debug",
+            "show",
+            "ping",
+            "page",
+            "hide",
+            "off",
+            "on",
+          ]),
+          (t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }),
+          t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }),
+          (t.load = function (t) {
+            var e = 3e5,
+              n = Math.ceil(new Date() / e) * e,
+              o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.crossorigin = "anonymous"),
+              (o.src =
+                "https://js.driftt.com/include/" + n + "/" + t + ".js");
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          });
+      }
+    })();
+    drift.SNIPPET_VERSION = "0.3.1";
+    drift.load("9rsb4kszx7th");
+
+  </script>
+</head>
+
+<body>
+  <!-- <form id="contact-us">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+  
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"><br><br>
+  
+      <input type="submit" value="Submit">
+    </form> -->
+
+
+
+  <div id="form_302f3f83-e0c7-4516-abc6-438eaa92eedf">Loading...</div>
+
+  <script>
+
+    /*<![CDATA[*/
+
+    var script = document.createElement("script");
+    script.async = 1;
+    script.src =
+      "https://apply.business.wfu.edu/register/?id=302f3f83-e0c7-4516-abc6-438eaa92eedf&output=embed&div=form_302f3f83-e0c7-4516-abc6-438eaa92eedf" +
+      (location.search.length > 1
+        ? "&" + location.search.substring(1)
+        : "");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(script, s);
+    /*]]>*/
+
+    const formElementCont = document.getElementById('form_302f3f83-e0c7-4516-abc6-438eaa92eedf_container');
+
+    drift.api.collectFormData(formElementCont, {
+      campaignId: 2489177,
+    });
+
+    console.log(formElement);
+  </script>
+</body>
+
+</html>
