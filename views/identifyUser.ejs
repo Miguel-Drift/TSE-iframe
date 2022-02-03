@@ -33,26 +33,17 @@
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('9rsb4kszx7th');
 
-    let userJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2Mzg1NjE0ODcsImV4cCI6MTY3MDA5NzQ4NywiYXVkIjoiIiwic3ViIjoiMjIyLTQ0NC01NTUifQ.Quih3s_LRVr7WB9f1UcXvQYXFwkLtGZU3xWJP0LMvMQ';
+    let userJWT = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJPbmxpbmUgSldUIEJ1aWxkZXIiLCJpYXQiOjE2NDM3MjUxNzYsImV4cCI6MTY3NTI2MTE3NiwiYXVkIjoid3d3LmV4YW1wbGUuY29tIiwic3ViIjoiMTIzNC1hYmNkIn0.-6WHh8ry0_PWcvxwY4FIBJZjHV459JDtAR0bvs61Mgk';
 
-    drift.identify("222-444-555", {
-      email: "johndoe+test@test.com"
+    drift.identify("1234-1234", {
+      email: 'daisydukes@test.com',
+      firstName: "Emma",
+      lastName: "Emma"
     }, { userJwt: userJWT });
-
-    var onSubmit = function(response) {
-        drift.api.collectFormData('#form471', {
-            campaignId: 2478707,
-            followupUrl: "https://www.extrahop.com/company/contact-thank-you"
-        });
-        document.getElementById("form471").submit();
-    };
 
   </script>
 
-var onSubmit = function(response) {
-  drift.api.collectFormData('#form471', {
-      campaignId: 2478707,
-  });
+
 
 </head>
 
@@ -60,7 +51,7 @@ var onSubmit = function(response) {
   <h1 class="header-title">Testing app</h1>
   <button id="playbookFire">Click me</button>
 
-  <h1><a href="http://localhost:5500/test?utm_source=test">Testing page</a></h1>
+  <!-- <h1><a href="http://localhost:5500/test?utm_source=test">Testing page</a></h1> -->
 
 
 </body>
